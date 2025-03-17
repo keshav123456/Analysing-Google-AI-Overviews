@@ -60,7 +60,7 @@ def analyze_sources(data, domain, domain2="zzzzzzzzzzz"):
     
     print(f"Average number of AI sources per overview: {avg_ai_sources_per_overview:.2f}")
     print(f"Percentage of common sources: {percent_common_sources:.2f}%")
-    
+
     from prettytable import PrettyTable
 
     table = PrettyTable()
@@ -81,3 +81,7 @@ print(f"{'-'*60}")
 analyze_sources("dataset/data_with_ai_overview.json", ".edu", ".ac.uk")
 print(f"{'-'*60}")
 analyze_sources("dataset/data_with_ai_overview.json", "wikipedia")
+print(f"{'-'*60}")
+analyze_sources("dataset/data_with_ai_overview.json", "quora")
+print(f"{'-'*60}")
+analyze_sources("dataset/data_with_ai_overview.json", "reddit")
